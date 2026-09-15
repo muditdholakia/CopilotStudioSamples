@@ -4,3 +4,52 @@ updates:
     directory: /
     schedule:
       interval: weekly
+  - package-ecosystem: npm
+    directories:
+      - "/contact-center/servicenow/DirectLineAzureFunction"
+      - "/extensibility/agents-sdk/call-agent-connector/SyncToAsyncService"
+      - "/extensibility/human-in-the-loop"
+      - "/extensibility/mcp/dynamic-mcp-routing-typescript"
+      - "/extensibility/mcp/order-management-enhanced-tc/mcp-servers/order-management"
+      - "/extensibility/mcp/order-management-enhanced-tc/mcp-servers/warehouse"
+      - "/extensibility/mcp/pass-resources-as-inputs"
+      - "/extensibility/mcp/search-species-resources-typescript"
+      - "/testing/evaluation/EvalGateADO/scripts"
+      - "/ui/custom-ui/assistant-ui/assistant-ui-mcs"
+      - "/ui/custom-ui/reasoning-display/pkg/agents-copilotstudio-client"
+      - "/ui/custom-ui/reasoning-display/pkg/agents-copilotstudio-client/dist"
+      - "/ui/embed/d365-cs-okta"
+      - "/ui/embed/d365-cs-sharepoint"
+      - "/ui/embed/pcf-canvas-app/Source"
+      - "/ui/embed/servicenow-widget"
+      - "/ui/embed/sharepoint-customizer"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      learning-dependencies:
+        patterns: ["*"]
+  - package-ecosystem: nuget
+    directories:
+      - "/contact-center/skill-handoff/ContosoLiveChatApp"
+      - "/contact-center/skill-handoff/HandoverToLiveAgentSample"
+      - "/extensibility/a2a/Simple-A2A-Sample"
+      - "/extensibility/agents-sdk/multilingual-bot/Bot"
+      - "/extensibility/agents-sdk/relay-bot"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      learning-dependencies:
+        patterns: ["*"]
+  - package-ecosystem: pip
+    directories:
+      - "/extensibility/mcp/order-management-enhanced-tc/chat-ui"
+      - "/testing/functional/PytestAgentsSDK"
+      - "/testing/functional/ResponseAnalysisAgentsSDK"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      learning-dependencies:
+        patterns: ["*"]
